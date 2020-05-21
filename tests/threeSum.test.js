@@ -17,4 +17,9 @@ describe('threeSum', () => {
         const expected = [[-1, 0, 1]]
         expect(threeSum(testArr)).toEqual(expected)
     })
+    it('has all zeros', () => {
+        const testArr = [0, 0, 0]
+        const expected = [[0, 0, 0]]
+        expect(threeSum(testArr)).toEqual(expected)
+    })
 })

@@ -13,8 +13,12 @@ function threeSum(array) {
             }
         }
     }
-    return allSolns
+    return [...new Set(allSolns.map(stringifyArr))]
+    .map(parseArr)
 }
+
+const stringifyArr = arr => JSON.stringify(arr.sort())
+const parseArr = strArr => JSON.parse(strArr)
 
 const makeIdxArr = (arr) => (...indexes) => indexes.map(idx => arr[idx])
 const sum = (arr) => arr.reduce((a, b) => a + b, 0)
