@@ -1,4 +1,4 @@
-const asteroidCollision = require("../src/asteroidCollission")
+const asteroidCollision = require("../src/asteroidCollision")
 
 describe('asteroidCollision', () => {
     it('tests', () => {
