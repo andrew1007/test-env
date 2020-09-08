@@ -21,6 +21,6 @@ describe('asteroidCollision', () => {
         expect(asteroidCollision([-2, -2, -2, 1])).toEqual([-2, -2, -2, 1])
     })
     it('tests', () => {
-        expect(asteroidCollision([-2, -2, 1, -1])).toEqual([-2, -2])
+        expect(asteroidCollision([-2, -2, 1, -1])).toEqual([-2, -2, -1])
     })
 })
